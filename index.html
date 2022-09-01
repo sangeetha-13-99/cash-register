@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Rancho&display=swap" rel="stylesheet">
+    <title>Cash Register App</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class="heading">Cash Registor App 🤓</h1>
+            <div class="cashRegistorDiv">
+                <div class="amountToPayDiv">
+                    <label for="amountToPayField" class="amountToPayLabel">Bill Amount</label>
+                    <input id="amountToPayField" placeholder="Enter Bill Amount "/>
+                    <button class="amountToPayEnterButton">Enter</button>
+                </div>
+                <div class="amountGivenDiv">
+                        <label for="amountGivenField">Amount Given</label>
+                        <input id="amountGivenField" placeholder="Enter Amount Given "/>
+                        <button class="amountGivenCheckButton">Check</button>
+                </div>
+                <p class="errorMessage"></p>
+            </div>
+            <div class="denominationDiv">
+                    <h2>your returns</h2>
+                <table>
+                    <tr class="rowContainer">
+                        <th>no of notes</th>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                        <td class="notesReturned">-</td>
+                    </tr>
+                    <tr class="rowContainer">
+                            <th>notes</th>
+                            <td>2000</td>
+                            <td>500</td>
+                            <td>200</td>
+                            <td>100</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>1</td>
+                    </tr>
+                </table>
+        </div>	
+</div>
+<script src="script.js"></script>
+</body>
+</html>

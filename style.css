@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    margin:0;
+    background-color:#18181b;
+    font-family: 'Rancho', cursive;
+    height:100vh;
+  }
+  .hide{
+    display: none;
+  }
+  #app{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    
+  }
+  .heading{
+    width:fit-content;
+    margin:20px auto;
+    color:#fb7185;
+    padding:10px 20px;
+    background-color:#701a7525 ;
+  }
+  
+  .denominationDiv table{
+    margin:10px auto;
+  }
+  .cashRegistorDiv{
+    margin:40px 0;
+    display:flex;
+    flex-direction: column;
+  }
+  .cashRegistorDiv div{
+    margin:20px auto;
+    width:60%;
+  }
+  .cashRegistorDiv label{
+    display: inline-block;
+    color:#fb7185;
+  }
+  .cashRegistorDiv input{
+    font-family: 'Rancho', cursive;
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    outline:none;
+    border:none;
+    font-size:20px;
+    color:white;
+    background-color:#701a7525 ;
+  }
+  .cashRegistorDiv input::placeholder{
+    text-align:center;
+  }
+  .cashRegistorDiv button{
+    font-family: 'Rancho', cursive;
+    outline:none;
+    border:none;
+    padding:2px 20px;
+    background-color:#fb7185 ;
+    color:white;
+    font-size: 20px;
+    border-radius:2px; 
+  }
+  
+  .denominationDiv>h2{
+    color:white;
+    font-size:30px;
+    width:60%;
+    margin:auto;
+  }
+  
+  .denominationDiv table{
+    width:50%;
+  }
+  
+  .rowContainer td,th{
+    padding:5px 10px;
+    background-color:#fb7185 ;
+    color:white;
+  }
+  
+  .errorMessage{
+    color:white;
+    font-size:30px;
+  }
+
+@media only screen and (max-width:769px){
+    .denominationDiv tbody{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .rowContainer{
+        display: grid;
+        width:100%;
+    }
+}
