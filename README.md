@@ -7,6 +7,6 @@
 This is a <strong> Cash Register App </strong> which takes the bill <strong>amount to pay </strong>and <strong> amount you gave </strong> to pay the bill as inputs and calculates the return of notes, this app is made with pure js and html and css and developed in code sandbox
 
 <div>
-    Do check out the live link of this app:  <a href="https://csb-dmw6ny.netlify.app/">cash-register-app</a>
+    Do check out the live link of this app:  <a href="https://sj-cash-register-app.netlify.app/">cash-register-app</a>
 </div>
 
