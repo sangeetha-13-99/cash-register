@@ -14,12 +14,12 @@
             <div class="cashRegistorDiv">
                 <div class="amountToPayDiv">
                     <label for="amountToPayField" class="amountToPayLabel">Bill Amount</label>
-                    <input id="amountToPayField" placeholder="Enter Bill Amount "/>
+                    <input type="number" min="1" id="amountToPayField" placeholder="Enter Bill Amount "/>
                     <button class="amountToPayEnterButton">Enter</button>
                 </div>
                 <div class="amountGivenDiv">
                         <label for="amountGivenField">Amount Given</label>
-                        <input id="amountGivenField" placeholder="Enter Amount Given "/>
+                        <input type="number" min="0" id="amountGivenField" placeholder="Enter Amount Given "/>
                         <button class="amountGivenCheckButton">Check</button>
                 </div>
                 <p class="errorMessage"></p>

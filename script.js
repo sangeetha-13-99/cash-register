@@ -18,7 +18,7 @@ amountToPayEnterButton.addEventListener('click',function(){
     cashAmountGiven.parentElement.classList.remove('hide');
   }
   else{
-    errorMessage.innerHTML='enter valid bill amount to pay';
+    errorMessage.innerHTML='enter valid bill amount to pay eg: billamount  greater/equal to 1';
   }
 })
 
@@ -26,14 +26,18 @@ amountGivenCheckButton.addEventListener('click',function(){
   errorMessage.innerHTML='';
   let cashAmountGivenValue=Number(cashAmountGiven.value.trim());
   let cashAmountToPayValue=Number(cashAmountToPay.value.trim());
-  if(cashAmountGiven.value.trim()!==""){
+  if(cashAmountGiven.value.trim()!=="" && cashAmountToPayValue>0  && cashAmountGivenValue>=0){
     if(cashAmountGivenValue>=cashAmountToPayValue){
       // console.log(calculateDenominations(cashAmountGivenValue-cashAmountToPayValue));
       calculateDenominations(cashAmountGivenValue-cashAmountToPayValue);
+      errorMessage.innerHTML=`check your returns below`;
     }
     else{
       errorMessage.innerHTML=`you have amount less than Bill Amount 😟`;
     }
+  }
+  else{
+    errorMessage.innerHTML=`Enter valid amount `;
   }
 })
 
